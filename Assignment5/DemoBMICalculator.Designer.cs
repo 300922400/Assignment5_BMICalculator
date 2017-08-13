@@ -86,6 +86,7 @@ namespace Assignment5
             this.Calculatebutton.TabIndex = 14;
             this.Calculatebutton.Text = "Calculate ";
             this.Calculatebutton.UseVisualStyleBackColor = false;
+            this.Calculatebutton.Click += new System.EventHandler(this.Calculatebutton_Click);
             // 
             // MetricradioButton
             // 
@@ -179,7 +180,9 @@ namespace Assignment5
             this.ResulttextBox.Name = "ResulttextBox";
             this.ResulttextBox.Size = new System.Drawing.Size(309, 38);
             this.ResulttextBox.TabIndex = 1;
+            this.ResulttextBox.TabStop = false;
             this.ResulttextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ResulttextBox.TextChanged += new System.EventHandler(this.ResulttextBox_TextChanged);
             // 
             // progressBar1
             // 

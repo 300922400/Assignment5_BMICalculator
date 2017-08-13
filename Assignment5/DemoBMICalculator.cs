@@ -19,6 +19,47 @@ namespace Assignment5
 {
     public partial class DemoBMICalculator : Form
     {
+        // private instance variables
+        private double _height;
+        private double _weight;
+        private double _result;
+        // publish properties
+        public double User_Height
+        {
+            get
+            {
+                return this._height;
+            }
+            set
+            {
+                this._height = value;
+            }
+        }
+        public double User_Weight
+        {
+            get
+            {
+                return this._weight;
+            }
+            set
+            {
+                this._weight = value;
+            }
+        }
+        public double User_Result
+        {
+            get
+            {
+                return this._result;
+            }
+            set
+            {
+                this._result = value;
+            }
+        }
+        /// <summary>
+        /// This is the main constructor for BMI Form
+        /// </summary>
         public DemoBMICalculator()
         {
             InitializeComponent();
@@ -36,7 +77,7 @@ namespace Assignment5
 
         private void MetricradioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+         
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -77,7 +118,35 @@ namespace Assignment5
         {
             HeightBox.Clear();
             WeightBox.Clear();
+            ResulttextBox.Text = "";
+        }
 
+        private void ResulttextBox_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        /// <summary>
+        /// This is the event handler to apply the approriate formula 
+        /// and display the result on ResulttextBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Calculatebutton_Click(object sender, EventArgs e)
+        {
+            User_Height = double.Parse(HeightBox.Text);
+            User_Weight = double.Parse(WeightBox.Text);
+            if (MetricradioButton.Checked)
+            {
+                User_Result = User_Weight / (User_Height * User_Height);
+                ResulttextBox.Text = String.Format("{0:f}", User_Result);
+            }
+            else if (ImperialradioButton.Checked)
+            {
+                User_Result = (User_Weight * 703) / (User_Height * User_Height);
+                ResulttextBox.Text = String.Format("{0:f}", User_Result);
+            }
         }
     }
 }
