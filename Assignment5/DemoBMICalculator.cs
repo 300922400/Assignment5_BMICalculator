@@ -74,12 +74,32 @@ namespace Assignment5
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (ImperialradioButton.Checked)
+            {
+                HeightChoiceLabel.Text = "In Inches";
+                WeightChoicelabel.Text = "In Pounds";
+            }
+            else
+            {
+                HeightChoiceLabel.Text = "";
+                WeightChoicelabel.Text = "";
+            }
         }
 
         private void MetricradioButton_CheckedChanged(object sender, EventArgs e)
         {
-         
+            if (MetricradioButton.Checked)
+            {
+                HeightChoiceLabel.Text = "In Metres";
+                WeightChoicelabel.Text = "In Kilos";
+            }
+            else
+            {
+                HeightChoiceLabel.Text = "";
+                WeightChoicelabel.Text = "";
+
+            }
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -155,19 +175,9 @@ namespace Assignment5
         {
             if (ImperialradioButton.Checked)
             {
-                HeightChoiceLabel.Text = "In Inches";
-                WeightChoicelabel.Text = "In Pounds";
+                
             }
-            else if (MetricradioButton.Checked)
-            {
-                HeightChoiceLabel.Text = "In Metres";
-                WeightChoicelabel.Text = "In Kilos";
-            }
-            else
-            {
-                HeightChoiceLabel.Text = "";
-                WeightChoicelabel.Text = "";
-            }
+            
         }
     }
 }
