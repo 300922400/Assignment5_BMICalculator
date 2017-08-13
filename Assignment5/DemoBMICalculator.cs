@@ -11,7 +11,7 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: Create the BMI Calculator
- * Version 1 - Modify the properties of the BMICalculator Form
+ * Version 2 - Modify the properties of the BMICalculator Form
  * 
  */
 
@@ -60,6 +60,11 @@ namespace Assignment5
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
