@@ -11,7 +11,9 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: Create the BMI Calculator
- * Version 3 - Create the event handler to reset the BMICalculator Form
+ * Version 4 - Create the event handler to event handler to 
+ * apply the approriate formula 
+ * and display the result on ResulttextBox
  * 
  */
 
@@ -146,6 +148,25 @@ namespace Assignment5
             {
                 User_Result = (User_Weight * 703) / (User_Height * User_Height);
                 ResulttextBox.Text = String.Format("{0:f}", User_Result);
+            }
+        }
+
+        private void HeightChoiceLabel_Click(object sender, EventArgs e)
+        {
+            if (ImperialradioButton.Checked)
+            {
+                HeightChoiceLabel.Text = "In Inches";
+                WeightChoicelabel.Text = "In Pounds";
+            }
+            else if (MetricradioButton.Checked)
+            {
+                HeightChoiceLabel.Text = "In Metres";
+                WeightChoicelabel.Text = "In Kilos";
+            }
+            else
+            {
+                HeightChoiceLabel.Text = "";
+                WeightChoicelabel.Text = "";
             }
         }
     }

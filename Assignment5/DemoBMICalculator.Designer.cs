@@ -42,6 +42,8 @@ namespace Assignment5
             this.WeightBox = new System.Windows.Forms.TextBox();
             this.ResulttextBox = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.HeightChoiceLabel = new System.Windows.Forms.Label();
+            this.WeightChoicelabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +130,8 @@ namespace Assignment5
             this.tableLayoutPanel1.Controls.Add(this.ImperialradioButton, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.MetricradioButton, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.WeightBox, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.WeightChoicelabel, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.HeightChoiceLabel, 1, 4);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -158,9 +162,10 @@ namespace Assignment5
             // 
             // HeightBox
             // 
+            this.HeightBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeightBox.Location = new System.Drawing.Point(3, 179);
             this.HeightBox.Name = "HeightBox";
-            this.HeightBox.Size = new System.Drawing.Size(100, 38);
+            this.HeightBox.Size = new System.Drawing.Size(138, 38);
             this.HeightBox.TabIndex = 16;
             this.HeightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -168,7 +173,7 @@ namespace Assignment5
             // 
             this.WeightBox.Location = new System.Drawing.Point(3, 267);
             this.WeightBox.Name = "WeightBox";
-            this.WeightBox.Size = new System.Drawing.Size(100, 38);
+            this.WeightBox.Size = new System.Drawing.Size(138, 38);
             this.WeightBox.TabIndex = 17;
             this.WeightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -191,6 +196,27 @@ namespace Assignment5
             this.progressBar1.Size = new System.Drawing.Size(311, 23);
             this.progressBar1.TabIndex = 2;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // HeightChoiceLabel
+            // 
+            this.HeightChoiceLabel.AutoSize = true;
+            this.HeightChoiceLabel.Location = new System.Drawing.Point(162, 180);
+            this.HeightChoiceLabel.Margin = new System.Windows.Forms.Padding(4, 4, 0, 0);
+            this.HeightChoiceLabel.Name = "HeightChoiceLabel";
+            this.HeightChoiceLabel.Size = new System.Drawing.Size(14, 31);
+            this.HeightChoiceLabel.TabIndex = 18;
+            this.HeightChoiceLabel.Text = "\r\n";
+            this.HeightChoiceLabel.Click += new System.EventHandler(this.HeightChoiceLabel_Click);
+            // 
+            // WeightChoicelabel
+            // 
+            this.WeightChoicelabel.AutoSize = true;
+            this.WeightChoicelabel.Location = new System.Drawing.Point(162, 268);
+            this.WeightChoicelabel.Margin = new System.Windows.Forms.Padding(4, 4, 3, 0);
+            this.WeightChoicelabel.Name = "WeightChoicelabel";
+            this.WeightChoicelabel.Size = new System.Drawing.Size(14, 31);
+            this.WeightChoicelabel.TabIndex = 19;
+            this.WeightChoicelabel.Text = "\r\n";
             // 
             // DemoBMICalculator
             // 
@@ -228,6 +254,8 @@ namespace Assignment5
         private System.Windows.Forms.TextBox HeightBox;
         private System.Windows.Forms.TextBox WeightBox;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label WeightChoicelabel;
+        private System.Windows.Forms.Label HeightChoiceLabel;
     }
 }
 
