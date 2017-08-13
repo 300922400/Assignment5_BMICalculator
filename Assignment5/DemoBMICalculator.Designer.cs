@@ -37,10 +37,10 @@ namespace Assignment5
             this.MetricradioButton = new System.Windows.Forms.RadioButton();
             this.ImperialradioButton = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ResulttextBox = new System.Windows.Forms.TextBox();
             this.Resetbutton = new System.Windows.Forms.Button();
             this.HeightBox = new System.Windows.Forms.TextBox();
             this.WeightBox = new System.Windows.Forms.TextBox();
+            this.ResulttextBox = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -144,15 +144,6 @@ namespace Assignment5
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // ResulttextBox
-            // 
-            this.ResulttextBox.BackColor = System.Drawing.Color.White;
-            this.ResulttextBox.Enabled = false;
-            this.ResulttextBox.Location = new System.Drawing.Point(2, 388);
-            this.ResulttextBox.Name = "ResulttextBox";
-            this.ResulttextBox.Size = new System.Drawing.Size(309, 38);
-            this.ResulttextBox.TabIndex = 1;
-            // 
             // Resetbutton
             // 
             this.Resetbutton.BackColor = System.Drawing.Color.Gray;
@@ -162,6 +153,7 @@ namespace Assignment5
             this.Resetbutton.TabIndex = 15;
             this.Resetbutton.Text = "Reset";
             this.Resetbutton.UseVisualStyleBackColor = false;
+            this.Resetbutton.Click += new System.EventHandler(this.Resetbutton_Click);
             // 
             // HeightBox
             // 
@@ -169,6 +161,7 @@ namespace Assignment5
             this.HeightBox.Name = "HeightBox";
             this.HeightBox.Size = new System.Drawing.Size(100, 38);
             this.HeightBox.TabIndex = 16;
+            this.HeightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // WeightBox
             // 
@@ -176,6 +169,17 @@ namespace Assignment5
             this.WeightBox.Name = "WeightBox";
             this.WeightBox.Size = new System.Drawing.Size(100, 38);
             this.WeightBox.TabIndex = 17;
+            this.WeightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // ResulttextBox
+            // 
+            this.ResulttextBox.BackColor = System.Drawing.Color.White;
+            this.ResulttextBox.Enabled = false;
+            this.ResulttextBox.Location = new System.Drawing.Point(2, 388);
+            this.ResulttextBox.Name = "ResulttextBox";
+            this.ResulttextBox.Size = new System.Drawing.Size(309, 38);
+            this.ResulttextBox.TabIndex = 1;
+            this.ResulttextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // progressBar1
             // 

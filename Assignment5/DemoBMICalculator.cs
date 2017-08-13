@@ -11,7 +11,7 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: Create the BMI Calculator
- * Version 2 - Modify the properties of the BMICalculator Form
+ * Version 3 - Create the event handler to reset the BMICalculator Form
  * 
  */
 
@@ -66,6 +66,17 @@ namespace Assignment5
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
+
+        }
+        /// <summary>
+        /// This is event handler to reset the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Resetbutton_Click(object sender, EventArgs e)
+        {
+            HeightBox.Clear();
+            WeightBox.Clear();
 
         }
     }
