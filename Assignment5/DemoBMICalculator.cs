@@ -190,7 +190,7 @@ namespace Assignment5
   /// <param name="e"></param>
         private void DemoBMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

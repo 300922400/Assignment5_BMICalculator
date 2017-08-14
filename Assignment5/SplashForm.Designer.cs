@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
+            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SplashFormTimer
@@ -38,21 +39,39 @@
             this.SplashFormTimer.Interval = 3000;
             this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
             // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel.Location = new System.Drawing.Point(23, 27);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(258, 78);
+            this.WelcomeLabel.TabIndex = 0;
+            this.WelcomeLabel.Text = "Welcome To\r\nBMI Calculator";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.WelcomeLabel.Click += new System.EventHandler(this.WelcomeLabel_Click);
+            // 
             // SplashForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = global::Assignment5.Properties.Resources.Splash;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(312, 453);
             this.ControlBox = false;
+            this.Controls.Add(this.WelcomeLabel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer SplashFormTimer;
+        private System.Windows.Forms.Label WelcomeLabel;
     }
 }

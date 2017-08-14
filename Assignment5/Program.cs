@@ -12,16 +12,19 @@ using System.Windows.Forms;
  */
 namespace Assignment5
 {
-    static class Program
+    public static class Program
     {
+        // Create reference to forms
+        public static DemoBMICalculator BMITCalculator;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            BMITCalculator = new DemoBMICalculator();//instantiate new object of BMI calculator
             Application.Run(new SplashForm());
         }
     }
