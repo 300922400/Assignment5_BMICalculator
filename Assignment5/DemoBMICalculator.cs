@@ -11,9 +11,8 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: Create the BMI Calculator
- * Version 4 - Create the event handler to event handler to 
- * apply the approriate formula 
- * and display the result on ResulttextBox
+ * Version 5 - Create the event handlers to indicate
+ * user input the proper value in Heigh and Weigh Box
  * 
  */
 
@@ -71,7 +70,11 @@ namespace Assignment5
         {
 
         }
-
+        /// <summary>
+        /// This default event is to indicate user input the proper value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (ImperialradioButton.Checked)
@@ -85,6 +88,11 @@ namespace Assignment5
                 WeightChoicelabel.Text = "";
             }
         }
+        /// <summary>
+        /// This method is to indicate the user input the proper value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void MetricradioButton_CheckedChanged(object sender, EventArgs e)
         {

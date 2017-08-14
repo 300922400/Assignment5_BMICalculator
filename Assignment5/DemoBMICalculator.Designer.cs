@@ -44,6 +44,7 @@ namespace Assignment5
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.HeightChoiceLabel = new System.Windows.Forms.Label();
             this.WeightChoicelabel = new System.Windows.Forms.Label();
+            this.Displaylabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@ namespace Assignment5
             this.Calculatebutton.BackColor = System.Drawing.SystemColors.GrayText;
             this.Calculatebutton.Location = new System.Drawing.Point(3, 311);
             this.Calculatebutton.Name = "Calculatebutton";
-            this.Calculatebutton.Size = new System.Drawing.Size(152, 42);
+            this.Calculatebutton.Size = new System.Drawing.Size(149, 40);
             this.Calculatebutton.TabIndex = 14;
             this.Calculatebutton.Text = "Calculate ";
             this.Calculatebutton.UseVisualStyleBackColor = false;
@@ -93,10 +94,10 @@ namespace Assignment5
             // MetricradioButton
             // 
             this.MetricradioButton.AutoSize = true;
-            this.MetricradioButton.Location = new System.Drawing.Point(161, 91);
+            this.MetricradioButton.Location = new System.Drawing.Point(158, 91);
             this.MetricradioButton.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.MetricradioButton.Name = "MetricradioButton";
-            this.MetricradioButton.Size = new System.Drawing.Size(159, 35);
+            this.MetricradioButton.Size = new System.Drawing.Size(154, 35);
             this.MetricradioButton.TabIndex = 1;
             this.MetricradioButton.TabStop = true;
             this.MetricradioButton.Text = "Metric Units";
@@ -133,7 +134,7 @@ namespace Assignment5
             this.tableLayoutPanel1.Controls.Add(this.WeightChoicelabel, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.HeightChoiceLabel, 1, 4);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -145,16 +146,16 @@ namespace Assignment5
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(320, 356);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 354);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // Resetbutton
             // 
             this.Resetbutton.BackColor = System.Drawing.Color.Gray;
-            this.Resetbutton.Location = new System.Drawing.Point(161, 311);
+            this.Resetbutton.Location = new System.Drawing.Point(158, 311);
             this.Resetbutton.Name = "Resetbutton";
-            this.Resetbutton.Size = new System.Drawing.Size(150, 42);
+            this.Resetbutton.Size = new System.Drawing.Size(150, 40);
             this.Resetbutton.TabIndex = 15;
             this.Resetbutton.Text = "Reset";
             this.Resetbutton.UseVisualStyleBackColor = false;
@@ -181,7 +182,7 @@ namespace Assignment5
             // 
             this.ResulttextBox.BackColor = System.Drawing.Color.White;
             this.ResulttextBox.Enabled = false;
-            this.ResulttextBox.Location = new System.Drawing.Point(2, 388);
+            this.ResulttextBox.Location = new System.Drawing.Point(3, 418);
             this.ResulttextBox.Name = "ResulttextBox";
             this.ResulttextBox.Size = new System.Drawing.Size(309, 38);
             this.ResulttextBox.TabIndex = 1;
@@ -191,7 +192,7 @@ namespace Assignment5
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(0, 362);
+            this.progressBar1.Location = new System.Drawing.Point(0, 393);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(311, 23);
             this.progressBar1.TabIndex = 2;
@@ -200,7 +201,7 @@ namespace Assignment5
             // HeightChoiceLabel
             // 
             this.HeightChoiceLabel.AutoSize = true;
-            this.HeightChoiceLabel.Location = new System.Drawing.Point(162, 180);
+            this.HeightChoiceLabel.Location = new System.Drawing.Point(159, 180);
             this.HeightChoiceLabel.Margin = new System.Windows.Forms.Padding(4, 4, 0, 0);
             this.HeightChoiceLabel.Name = "HeightChoiceLabel";
             this.HeightChoiceLabel.Size = new System.Drawing.Size(14, 31);
@@ -211,18 +212,30 @@ namespace Assignment5
             // WeightChoicelabel
             // 
             this.WeightChoicelabel.AutoSize = true;
-            this.WeightChoicelabel.Location = new System.Drawing.Point(162, 268);
+            this.WeightChoicelabel.Location = new System.Drawing.Point(159, 268);
             this.WeightChoicelabel.Margin = new System.Windows.Forms.Padding(4, 4, 3, 0);
             this.WeightChoicelabel.Name = "WeightChoicelabel";
             this.WeightChoicelabel.Size = new System.Drawing.Size(14, 31);
             this.WeightChoicelabel.TabIndex = 19;
             this.WeightChoicelabel.Text = "\r\n";
             // 
+            // Displaylabel
+            // 
+            this.Displaylabel.AutoSize = true;
+            this.Displaylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Displaylabel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Displaylabel.Location = new System.Drawing.Point(3, 359);
+            this.Displaylabel.Name = "Displaylabel";
+            this.Displaylabel.Size = new System.Drawing.Size(98, 31);
+            this.Displaylabel.TabIndex = 3;
+            this.Displaylabel.Text = "Result";
+            // 
             // DemoBMICalculator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(314, 455);
+            this.Controls.Add(this.Displaylabel);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.ResulttextBox);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -256,6 +269,7 @@ namespace Assignment5
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label WeightChoicelabel;
         private System.Windows.Forms.Label HeightChoiceLabel;
+        private System.Windows.Forms.Label Displaylabel;
     }
 }
 
