@@ -41,7 +41,6 @@ namespace Assignment5
             this.HeightBox = new System.Windows.Forms.TextBox();
             this.WeightBox = new System.Windows.Forms.TextBox();
             this.ResulttextBox = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.HeightChoiceLabel = new System.Windows.Forms.Label();
             this.WeightChoicelabel = new System.Windows.Forms.Label();
             this.Displaylabel = new System.Windows.Forms.Label();
@@ -182,21 +181,13 @@ namespace Assignment5
             // 
             this.ResulttextBox.BackColor = System.Drawing.Color.White;
             this.ResulttextBox.Enabled = false;
-            this.ResulttextBox.Location = new System.Drawing.Point(3, 418);
+            this.ResulttextBox.Location = new System.Drawing.Point(0, 405);
             this.ResulttextBox.Name = "ResulttextBox";
             this.ResulttextBox.Size = new System.Drawing.Size(309, 38);
             this.ResulttextBox.TabIndex = 1;
             this.ResulttextBox.TabStop = false;
             this.ResulttextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ResulttextBox.TextChanged += new System.EventHandler(this.ResulttextBox_TextChanged);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(0, 393);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(311, 23);
-            this.progressBar1.TabIndex = 2;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // HeightChoiceLabel
             // 
@@ -236,7 +227,6 @@ namespace Assignment5
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(314, 455);
             this.Controls.Add(this.Displaylabel);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.ResulttextBox);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,6 +235,7 @@ namespace Assignment5
             this.Name = "DemoBMICalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DemoBMICalculator_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -266,7 +257,6 @@ namespace Assignment5
         private System.Windows.Forms.Button Resetbutton;
         private System.Windows.Forms.TextBox HeightBox;
         private System.Windows.Forms.TextBox WeightBox;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label WeightChoicelabel;
         private System.Windows.Forms.Label HeightChoiceLabel;
         private System.Windows.Forms.Label Displaylabel;

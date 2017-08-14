@@ -11,7 +11,7 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: This is splashform class
- * Version 1 - Create the splashform
+ * Version 2 - Create the splashform Timer - Tick event handler
  * 
  */
 namespace Assignment5
@@ -21,6 +21,18 @@ namespace Assignment5
         public SplashForm()
         {
             InitializeComponent();
+        }
+        /// <summary>
+        /// This is event handler for the "Tick"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            DemoBMICalculator BMITCalculator = new DemoBMICalculator();
+            BMITCalculator.Show();
+            this.Hide();
+            SplashFormTimer.Enabled = false;
         }
     }
 }

@@ -183,8 +183,12 @@ namespace Assignment5
         {
           
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+  /// <summary>
+  /// this is event handler for form closing 
+  /// </summary>
+  /// <param name="sender"></param>
+  /// <param name="e"></param>
+        private void DemoBMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }
