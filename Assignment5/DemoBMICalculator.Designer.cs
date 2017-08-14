@@ -85,7 +85,7 @@ namespace Assignment5
             this.Calculatebutton.BackColor = System.Drawing.SystemColors.GrayText;
             this.Calculatebutton.Location = new System.Drawing.Point(3, 311);
             this.Calculatebutton.Name = "Calculatebutton";
-            this.Calculatebutton.Size = new System.Drawing.Size(149, 40);
+            this.Calculatebutton.Size = new System.Drawing.Size(149, 39);
             this.Calculatebutton.TabIndex = 14;
             this.Calculatebutton.Text = "Calculate ";
             this.Calculatebutton.UseVisualStyleBackColor = false;
@@ -134,7 +134,7 @@ namespace Assignment5
             this.tableLayoutPanel1.Controls.Add(this.WeightChoicelabel, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.HeightChoiceLabel, 1, 4);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -146,7 +146,7 @@ namespace Assignment5
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 354);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 353);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -155,7 +155,7 @@ namespace Assignment5
             this.Resetbutton.BackColor = System.Drawing.Color.Gray;
             this.Resetbutton.Location = new System.Drawing.Point(158, 311);
             this.Resetbutton.Name = "Resetbutton";
-            this.Resetbutton.Size = new System.Drawing.Size(150, 40);
+            this.Resetbutton.Size = new System.Drawing.Size(150, 39);
             this.Resetbutton.TabIndex = 15;
             this.Resetbutton.Text = "Reset";
             this.Resetbutton.UseVisualStyleBackColor = false;

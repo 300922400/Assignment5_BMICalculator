@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
- * Description: Create the BMI Calculator
+ * Description: This is  the BMI Calculator
  * Version 5 - Create the event handlers to indicate
  * user input the proper value in Heigh and Weigh Box
  * 
@@ -181,11 +181,12 @@ namespace Assignment5
 
         private void HeightChoiceLabel_Click(object sender, EventArgs e)
         {
-            if (ImperialradioButton.Checked)
-            {
-                
-            }
-            
+          
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
