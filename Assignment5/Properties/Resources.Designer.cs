@@ -63,9 +63,9 @@ namespace Assignment5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BMI {
+        internal static System.Drawing.Bitmap smallBMI {
             get {
-                object obj = ResourceManager.GetObject("BMI", resourceCulture);
+                object obj = ResourceManager.GetObject("smallBMI", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

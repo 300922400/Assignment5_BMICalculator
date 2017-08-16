@@ -26,8 +26,7 @@ namespace Assignment5
             {
                 return Program.BMITCalculator;
             }
-            set
-            { }
+
         }
 
         //contructor

@@ -24,7 +24,8 @@ namespace Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            BMITCalculator = new DemoBMICalculator();//instantiate new object of BMI calculator
+            //instantiate new object of BMI calculator
+            BMITCalculator = new DemoBMICalculator();
             Application.Run(new SplashForm());
         }
     }

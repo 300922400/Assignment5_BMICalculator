@@ -11,9 +11,8 @@ using System.Windows.Forms;
 /* Name: Nguyen Thi Kim Ngan
  * Student ID: 300922400
  * Description: This is  the BMI Calculator
- * Version 5 - Create the event handlers to indicate
- * user input the proper value in Heigh and Weigh Box
- * 
+ *Version 6 - Modify the event handler Calculatebutton_Click
+ * to display the message of BMI 
  */
 
 namespace Assignment5
@@ -134,6 +133,25 @@ namespace Assignment5
         {
 
         }
+        //private void Check_User_Result()
+        //{
+        //    if (User_Result <= 18.5)
+        //    {
+        //        ResulttextBox.Text = "You are Underweight";
+        //    }
+        //    else if (User_Result >= 18.5 && User_Result <= 24.9)
+        //    {
+        //        ResulttextBox.Text = "You are Normal";
+        //    }
+        //    else if (User_Result >= 25 && User_Result <= 29.9)
+        //    {
+        //        ResulttextBox.Text = "You are Overweight";
+        //    }
+        //    else
+        //    {
+        //        ResulttextBox.Text = "You are Obese";
+        //    }
+        //}
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
@@ -170,16 +188,46 @@ namespace Assignment5
             if (MetricradioButton.Checked)
             {
                 User_Result = User_Weight / (User_Height * User_Height);
-                ResulttextBox.Text = String.Format("{0:f}", User_Result);
+                if (User_Result <= 18.5)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Underweight");
+                }
+                else if (User_Result >= 18.5 && User_Result <= 24.9)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Normal");
+                }
+                else if (User_Result >= 25 && User_Result <= 29.9)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Overweight");
+                }
+                else
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Obese");
+                }
+
             }
             else if (ImperialradioButton.Checked)
             {
                 User_Result = (User_Weight * 703) / (User_Height * User_Height);
-                ResulttextBox.Text = String.Format("{0:f}", User_Result);
+                if (User_Result <= 18.5)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Underweight");
+                }
+                else if (User_Result >= 18.5 && User_Result <= 24.9)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Normal");
+                }
+                else if (User_Result >= 25 && User_Result <= 29.9)
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Overweight");
+                }
+                else
+                {
+                    ResulttextBox.Text = String.Format("{0:f}_{1}", User_Result, "You are Obese");
+                }
             }
         }
-
-        private void HeightChoiceLabel_Click(object sender, EventArgs e)
+            private void HeightChoiceLabel_Click(object sender, EventArgs e)
         {
           
         }
